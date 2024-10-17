@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo-placeholder</title>
+</head>
+<body>
+    <div class="container"> 
+      <div class="header"> 
+        <img src="flyer.jpeg" alt="" class="flyer-img">
+        <img id="uploadedImage" alt="Uploaded Image" class="uploaded-img" style="display: none;">
+      </div> 
+      
+      <label for="file" class="footer"> 
+        <p>Not selected file</p> 
+      </label> 
+      <input id="file" type="file"> 
+      <button class="accept download" disabled="true">Accept</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
